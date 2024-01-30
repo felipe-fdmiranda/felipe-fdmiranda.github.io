@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        /* Efeitos de scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* JavaScript */
+        window.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const target = document.querySelector(link.getAttribute('href'));
+                    target.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Felipe Fernandes de Miranda</h1>
+        <p>Engenheiro de Software</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Sobre</h2>
+        <p>Coloque aqui informações sobre você e sua experiência como engenheiro de software.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projetos</h2>
+        <p>Coloque aqui informações sobre seus projetos de desenvolvimento de software.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Coloque aqui suas informações de contato.</p>
+    </section>
+</body>
+</html>
