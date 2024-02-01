@@ -9,3 +9,33 @@
   color: #14CF93 !important;
   cursor: pointer;
 }
+
+.header {
+    height: 125px;
+    display: grid;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.41);
+    background-color: #1a1a1a;
+}
+
+.header-nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.header-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 115px;
+}
