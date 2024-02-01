@@ -1,0 +1,11 @@
+.link-section{
+    color: white;
+    margin-right: 2rem;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.link-section:hover {
+  color: #14CF93 !important;
+  cursor: pointer;
+}
