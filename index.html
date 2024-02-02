@@ -1,104 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <meta charset="UTF-8">
+    <title>Felipe Miranda - Dev</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/libs/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/icon-coding.svg">
+    <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
+    <meta name="author" content="3rd Wave Media">    
+    <link rel="shortcut icon" href="assets/images/icon-coding.svg">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        #conteudo {
+            display: none;
+        }
+    </style>
+</head> 
 
-    <title>Felipe Miranda</title>
-</head>
-<body style="margin: 125px 0 0 0; padding: 0; height: 100vh; overflow-x: hidden; font-family: monospace; background-color: #1a1a1a; color: white;" >
-
-    <div class="header">
-        <div class="header-nome">
-            <img alt="icon page" style="margin-right: 2rem; margin-left: 2rem; height: 42px"  src="assets/icon-coding.svg">
-            <span style="font-size: 25px; margin-right: 1rem">Felipe Miranda </span>
-            <span style="font-size: 25px;">|</span> <!--fazer sumir no mobile-->
-            <span style="font-size: 25px; margin-left: 1rem; color: #14CF93"> Software Engineer </span>
-        </div>
-
-        <div class="header-sections">
-            <a href="#" class="link-section" style="color: white; margin-right: 1rem">ABOUT</a>
-            <a href="#projects" class="link-section" style="color: white; margin-right: 1rem">PROJECTS</a>
-            <a href="#tecnologies" class="link-section" style="color: white; margin-right: 1rem">TECNOLOGIES</a>
-            <a href="https://wa.me/5584991134949?text=Ol%C3%A1%2C+Felipe%2C+peguei+seu+contato+no+seu+site.+Adorei+o+seu+trabalho+e+estou+buscando+um+profissional+com+suas+habilidades.+Voc%C3%AA+teria+interesse+em+conversar+sobre+essa+oportunidade%3F"
-               class="link-section" target="_blank" style="color: white; ">CONTACT</a>
-        </div>
-
-    </div>
-
-    <div>
-        <section id="about">
-            <div class="container">
-                <div class="about-mobile" style="display: flex; align-items: center; height: 100vh; flex-direction: column;">
-
-                    <div>
-                        <h1 style="font-size: 50px !important; margin-bottom: 1rem">HI, I'M FELIPE MIRANDA</h1>
-                        <p class="text-about" style="margin-bottom: 1rem; color: #a2a2a2">
-                            I'm a <span style="color: #14CF93">senior software engineer</span> with over
-                            <span style="color: #14CF93">10 years of experience</span> in web development.
-                            Recent roles include Tech Lead, DevOps Engineer, and Software Architect.
-                            <br><br>
-                            Passionate about technology and innovation, I bring a wealth of experience and success in tackling challenging projects. I'm a problem solver with a
-                            commitment to quality and customer satisfaction.
-                        </p>
-                    </div>
-                    <div style="margin-bottom: 100px;">
-                        <a href="https://drive.google.com/file/d/1t7bSxEtHQE0t8W40LubZ1X4s9MtWIcRQ/view?usp=drive_link"
-                           class="btn text-about" target="_blank" style="background-color: #14CF93;
-                       padding: 1rem 2rem; border-radius: 10px;">Download CV</a>
-
-                        <a href="https://wa.me/5584991134949?text=Ol%C3%A1%2C+Felipe%2C+peguei+seu+contato+no+seu+site.+Adorei+o+seu+trabalho+e+estou+buscando+um+profissional+com+suas+habilidades.+Voc%C3%AA+teria+interesse+em+conversar+sobre+essa+oportunidade%3F"
-                           class="btn text-about" target="_blank" style="background-color: #14CF93;
-                       padding: 1rem 2rem; border-radius: 10px;">Contact me</a>
-                    </div>
-
-                </div>
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="assets/images/foto.png" alt="Felipe Fernandes de Miranda" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Felipe Fernandes de Miranda</h1>
+                <h2 class="desc">Desenvolvedor Full-Stack Senior</h2>
+                <ul class="social list-inline">
+                    <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                    <li><a href="https://www.linkedin.com/in/felipe-fernandes-de-miranda/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/felipe-fdmiranda" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                    <li><a href="https://www.instagram.com/felipe.fernandesm/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#" id="mostrarEsconderLink"><i class="fa fa-google"></i></a></li>
+                    <p id="conteudo"><br><span style="font-weight: bold; color: #49515a">E-mail: felipe.fdmiranda@gmail.com</span></p>
+                </ul>
+            </div><!--//profile-->
+            <div class="pull-right">
+                <a class="btn btn-cta-primary mr-3 " href="assets/cv.pdf" target="_blank">
+                    <i class="fa fa-download"></i>Baixar Curriculo</a>
+                <a class="btn btn-cta-primary " href="https://wa.me/5584991134949?text=Ol%C3%A1%2C+Felipe%2C+peguei+seu+contato+no+seu+site.+Adorei+o+seu+trabalho+e+estou+buscando+um+profissional+com+suas+habilidades.+Voc%C3%AA+teria+interesse+em+conversar+sobre+essa+oportunidade%3F" target="_blank">
+                    <i class="fa fa-phone"></i>Fale comigo</a>
             </div>
-        </section>
 
-        <section id="projects">
-            <div class="container">
-                <div  style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
-                    <h1 style="font-size: 50px !important; margin-bottom: 1rem">PROJECTS</h1>
-                    <p style="font-size: 1.5rem; margin-bottom: 1rem; color: #a2a2a2">
-                        Here are some of the projects I've worked on. I'm proud of the work I've done and the results I've achieved.
-                    </p>
-                    <div class="projects">
-                        <div class="project">
-                            <img src="assets/project1.png" alt="project 1" style="width: 100%; height: 100%">
-                            <div class="project-info">
-                                <h3>Project 1</h3>
-                                <p>Project description</p>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="assets/project2.png" alt="project 2" style="width: 100%; height: 100%">
-                            <div class="project-info">
-                                <h3>Project 2</h3>
-                                <p>Project description</p>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="assets/project3.png" alt="project 3" style="width: 100%; height: 100%">
-                            <div class="project-info">
-                                <h3>Project 3</h3>
-                                <p>Project description</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">Sobre mim</h2>
+                        <div class="content">
+                            <p>Sou um Engenheiro de software senior com mais de 10 anos de experiência em desenvolvimento Web. As minhas funções recentes incluem: Líder técnico, Engenheiro DevOps e Arquiteto de Software.
+<br><br>
+Apaixonado por tecnologia e inovação, trago uma vasta experiência e sucesso na abordagem de projectos desafiadores. Sou um solucionador de problemas com um compromisso na qualidade e a satisfação do cliente.</p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Últimos Projetos</h2>
+                        <div class="content">    
 
-        <section id="tecnologies">
-        </section>
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/project-4.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">Velocity - Designed for Products</a></h3>
+                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
+                                    <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
 
-    </div>
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Experiência de Trabalho</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Co-Founder & Lead Developer - <span class="place"><a href="#">Startup Hub</a></span> <span class="year">(2014 - Present)</span></h3>
+                                <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2013 - 2014)</span></h3>
+                                <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2012 - 2013)</span></h3>
+                                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
 
-    <script src="assets/libs/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Natal-RN, Brasil</li>
+                                    <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><span>felipe.fdmiranda@gmail.com</span></li>
+                                <li><i class="fa fa-phone"></i><span class="sr-only">Website:</span>
+                                    <span target="_blank" href="https://wa.me/5584991134949?text=Ol%C3%A1%2C+Felipe%2C+peguei+seu+contato+no+seu+site.+Adorei+o+seu+trabalho+e+estou+buscando+um+profissional+com+suas+habilidades.+Voc%C3%AA+teria+interesse+em+conversar+sobre+essa+oportunidade%3F">
+                                    +55 (84) 99113-4949</span></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Ruby on Rails<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Psychology and Computer Science</h3>
+                                <h4 class="university">University College London <span class="year">(2011-2012)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BSc Computer Science</h3>
+                                <h4 class="university">University of Bristol <span class="year">(2008-2011)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Portugues:</strong></span>
+                                    <span class="level">Nativo <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Inglês:</strong></span>
+                                    <span class="level">Avançado <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <!--<aside class="blog aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
+                        <div id="rss-feeds" class="content">
+
+                        </div>&lt;!&ndash;//content&ndash;&gt;
+                    </div>&lt;!&ndash;//section-inner&ndash;&gt;
+                </aside>&lt;!&ndash;//section&ndash;&gt;-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright"> © Felipe Fernandes de Miranda 2024 | All Rights Reserved</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script>
+        document.getElementById("mostrarEsconderLink").addEventListener("click", function() {
+            var conteudo = document.getElementById("conteudo");
+
+            if (conteudo.style.display === "none" || conteudo.style.display === "") {
+                conteudo.style.display = "block";
+            } else {
+                conteudo.style.display = "none";
+            }
+        });
+    </script>
 </body>
-</html>
+</html> 
+
