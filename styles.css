@@ -1,6 +1,5 @@
 .link-section{
     color: white;
-    margin-right: 2rem;
     font-size: 17px;
     text-decoration: none;
 }
@@ -38,4 +37,23 @@
 
 .content {
     margin-top: 115px;
+}
+
+.text-about {
+    font-size: 1.4rem;
+}
+
+.about-mobile {
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 429px){
+    .text-about {
+        font-size: 1.2rem;
+    }
+
+    .about-mobile {
+        justify-content: flex-start;
+    }
+
 }
