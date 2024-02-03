@@ -57,8 +57,8 @@ a.btn:focus {
 }
 a.btn-cta-primary,
 .btn-cta-primary {
-  background: #54ba4e;
-  border: 1px solid #54ba4e;
+  background: #3aaa54;
+  border: 1px solid #3aaa54;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
@@ -203,9 +203,9 @@ iframe {
   color: #5f6b77;
 }
 .latest .item .project-image:hover {
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 .latest .divider {
   margin-bottom: 60px;

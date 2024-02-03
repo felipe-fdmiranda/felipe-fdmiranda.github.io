@@ -33,7 +33,32 @@
             display: none;
         }
     </style>
-</head> 
+</head>
+
+<div class="modal" tabindex="-1" role="dialog" id="modalFacilita">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Conheça o Facilita</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p> <b>Para acessar o sistema, utilize o seguinte login:</b></p>
+                <p><b>Usuário:</b> teste</p>
+                <p><b>Senha:</b> 123456</p>
+            </div>
+            <div class="modal-footer">
+                <a id="acessarFacilita" style="color: white; background: #3aaa54; padding: 7px; border-radius: 7px; text-decoration: none"
+                   href="https://facilita.up.railway.app/login" target="_blank">
+                    <span style="margin-right: 0.5rem">Acessar o Sistema</span>
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <body>
     <!-- ******HEADER****** --> 
@@ -87,17 +112,27 @@ satisfação do cliente.
                <section class="latest section">
                     <div class="section-inner">
                         <h2 class="heading">Últimos Projetos</h2>
-                        <div class="content">    
+                        <div class="content" style="border: 1px solid #778492; padding: 20px; border-radius: 15px;">
 
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-4.png" alt="project name" />
-                                </a>
+                            <div class="item row" style="margin-bottom: 0">
+                                <div class="col-md-4 col-sm-4 col-xs-12" >
+                                    <img class="img-responsive project-image" src="assets/images/projects/facilita.png" alt="project name" />
+                                </div>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">Velocity - Designed for Products</a></h3>
-                                    <p>You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-                                    <p><a class="more-link" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
+                                    <h3 class="title">Facilita - Facilitando a Gestão Empresárial.</h3>
+                                    <p>
+                                        O Facilita é um ERP projetado sob medida para atender às demandas de micro e pequenas empresas, proporcionando uma solução completa
+                                        e eficaz para a gestão empresarial. Com foco na praticidade, engloba áreas cruciais, como Gestão Financeira, Controle de Estoque,
+                                        Gerenciamento de Clientes e Agendamento de Serviços. Além de simplificar processos operacionais, o Facilita oferece controle financeiro preciso e insights estratégicos,
+                                        elevando a eficiência e impulsionando para o sucesso empresarial.
+                                    </p>
+
+                                    <a id="openModalFacilita" class="more-link" style="color: white; margin-bottom: 0; font-size: 19px; border: 1px solid; padding: 5px;
+                                     text-align: center; background: #3aaa54; border-radius: 10px; text-decoration: none; display: block; cursor: pointer">
+                                        <i class="fa fa-external-link"></i>
+                                        Clique aqui e conheça o sistema!
+                                    </a>
+                                </div><!--//desc-->
                             </div><!--//item-->
 
                             
@@ -110,26 +145,48 @@ satisfação do cliente.
                         <h2 class="heading">Experiência de Trabalho</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Co-Founder & Lead Developer - <span class="place"><a href="#">Startup Hub</a></span> <span class="year">(2014 - Present)</span></h3>
-                                <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
-                            </div><!--//item-->
+                                <h3 class="title">Analista de Sistemas Sênior - <span class="place"><a href="#">JFRN</a></span> <span class="year">(Novembro 2020 - Atual)</span></h3>
+                                <ul>
+                                    <li>Desenvolvimento de sistemas web com Angular, Spring Boot e JSF.</li>
+                                    <li>Líder técnico e gestor de equipes de desenvolvimento (Tech Lead).</li>
+                                    <li>Arquiteto de software.</li>
+                                    <li>Engenheiro de DevOps</li>
+                                </ul>
+                            </div>
+
                             <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">Google</a></span> <span class="year">(2013 - 2014)</span></h3>
-                                <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
-                            </div><!--//item-->
-                            
+                                <h3 class="title">Analista de Sistemas Pleno - <span class="place"><a href="#">Logique Sistemas</a></span> <span class="year">(Maio 2019 - Outubro 2020)</span></h3>
+                                <ul>
+                                    <li>Desenvolvimento de sistemas web com Angular e Spring Boot.</li>
+                                    <li>Manutenção e evolução de sistemas com JSF.</li>
+                                    <li>Hospedagem de aplicações e bancos de dados na AWS.</li>
+
+                                </ul>
+                            </div>
+
                             <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="#">eBay</a></span> <span class="year">(2012 - 2013)</span></h3>
-                                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
+                                <h3 class="title">Analista de Sistemas Júnior - <span class="place"><a href="#">ESIG Software e Consultoria em TI</a></span> <span class="year">(Abril 2017 - Maio 2019)</span></h3>
+                                <ul>
+                                    <li>Manutenção e evolução de sistemas educacionais em JSF.</li>
+                                </ul>
+                            </div>
+
+                            <div class="item">
+                                <h3 class="title">Estagiário de Desenvolvimento de Software - <span class="place"><a href="#">Logique Sistemas</a></span> <span class="year">(Janeiro 2015 - Março 2017)</span></h3>
+                                <ul>
+                                    <li>Desenvolvimento de suplementos de Excel em C# e desenvolvimento de sistemas web em Java.</li>
+                                </ul>
+                            </div>
+                        </div><!--//content-->
+
+                        <p><a class="more-link" href="assets/cv.pdf" target="_blank"><i class="fa fa-external-link"></i> Veja mais detalhes no Currículo</a></p><!--//content-->
+
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
 
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
+                 <!--<aside class="info aside section">
                     <div class="section-inner">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
@@ -140,54 +197,79 @@ satisfação do cliente.
                                     <span target="_blank" href="https://wa.me/5584991134949?text=Ol%C3%A1%2C+Felipe%2C+peguei+seu+contato+no+seu+site.+Adorei+o+seu+trabalho+e+estou+buscando+um+profissional+com+suas+habilidades.+Voc%C3%AA+teria+interesse+em+conversar+sobre+essa+oportunidade%3F">
                                     +55 (84) 99113-4949</span></li>
                             </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
+                        </div>&lt;!&ndash;//content&ndash;&gt;
+                    </div>&lt;!&ndash;//section-inner&ndash;&gt;
+                </aside>--><!--//aside-->
                 
                 <aside class="skills aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
+                        <h2 class="heading" style="margin-bottom: 15px">Hard Skills</h2>
                         <div class="content">
-                            <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.</p>
-                            
+
                             <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Ruby on Rails<span class="level-label">Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a></p> 
+                                <div class="item" style="margin-bottom: 15px">
+                                    <h3 class="level-title">Especialista:</h3>
+                                    <div style="border: 1px solid #778492; padding: 8px; border-radius: 8px;">
+                                        <ul>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Java, JSF, Spring Boot</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">HTML, CSS, JavaScript</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Angular</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Scrum, Kanban</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Git</h3></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="margin-bottom: 15px">
+                                    <h3 class="level-title">Profissional:</h3>
+                                    <div style="border: 1px solid #778492; padding: 8px; border-radius: 8px;">
+                                        <ul>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">PostgreSQL</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">TypeScript</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">NodeJS</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">CI/CD</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Docker</h3></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="item" style="margin-bottom: 15px">
+                                    <h3 class="level-title">Intermediário:</h3>
+                                    <div style="border: 1px solid #778492; padding: 8px; border-radius: 8px;">
+                                        <ul>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">DevOps</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Microservices</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">AWS</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">React</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Python</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Oracle</h3></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>              
-                        </div><!--//content-->  
+                        </div>
+
+                        <h2 class="heading" style="margin-bottom: 15px">Soft Skills</h2>
+                        <div class="content">
+
+                            <div class="skillset">
+                                <div class="item" style="margin-bottom: 15px">
+                                    <div style="border: 1px solid #778492; padding: 8px; border-radius: 8px;">
+                                        <ul>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Resolução de Problemas</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Trabalho em Equipe</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Liderança</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Satisfação do Cliente</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Adaptabilidade</h3></li>
+                                            <li><h3 class="level-title" style="margin-bottom: 0 !important;">Gestão do Tempo</h3></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p><a class="more-link" href="assets/cv.pdf" target="_blank"><i class="fa fa-external-link"></i> Veja mais detalhes no Currículo</a></p><!--//content-->
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
                 
@@ -195,15 +277,29 @@ satisfação do cliente.
                 
                 <aside class="education aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Education</h2>
+                        <h2 class="heading">Formação Acadêmica</h2>
                         <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Psychology and Computer Science</h3>
-                                <h4 class="university">University College London <span class="year">(2011-2012)</span></h4>
+                            <div class="item">
+                                <h3 class="title" style="margin-bottom: 0">
+                                    <i class="fa fa-graduation-cap"></i>
+                                    Pós-graduação Lato Sensu:
+                                </h3>
+                                <h3 class="title" style="margin-bottom: 0">
+                                    <i class="fa fa-graduation-cap" style="opacity: 0"></i>
+                                    Tecnologia da Informação
+                                </h3>
+                                <h4 class="university" style="margin-top: 5px">UFRN <span class="year">(2021 - 2023)</span></h4>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BSc Computer Science</h3>
-                                <h4 class="university">University of Bristol <span class="year">(2008-2011)</span></h4>
+                                <h3 class="title" style="margin-bottom: 0">
+                                    <i class="fa fa-graduation-cap"></i>
+                                    Graduação:
+                                </h3>
+                                <h3 class="title" style="margin-bottom: 0">
+                                    <i class="fa fa-graduation-cap" style="opacity: 0"></i>
+                                    Engenharia de Computação
+                                </h3>
+                                <h4 class="university" style="margin-top: 5px">UFRN <span class="year">(2012 - 2017)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -269,7 +365,16 @@ satisfação do cliente.
                 conteudo.style.display = "none";
             }
         });
+
+        document.getElementById('openModalFacilita').addEventListener('click', function() {
+            $('#modalFacilita').modal('show');
+        });
+
+        document.getElementById('acessarFacilita').addEventListener('click', function() {
+            $('#modalFacilita').modal('hide');
+        });
     </script>
 </body>
-</html> 
+</html>
+
 
